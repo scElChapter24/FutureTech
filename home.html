@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--=============== remixicons ===============-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+        <!--=============== css ===============-->
+        <script src="https://kit.fontawesome.com/a8bee61608.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7.4.1/swiper-bundle.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="home.css">
+        <title>FutureTech</title>
+        <link rel="icon" type="image/x-icon" href="foto/logo.png">
+    </head>
+    <body>
+        <!--==================== header ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="home.html" class="nav__logo">FutureTech</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="home.html" class="nav__link">Beranda</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="about.html" class="nav__link">Tentang</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="product.html" class="nav__link">Produk</a>
+                        </li>
+                    </ul>
+
+                    <!-- Close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__actions">
+                    <!-- Search button -->
+                    <i class="ri-search-line nav__search" id="search-btn"></i>
+                    <!-- Cart button -->
+                    <i class="ri-shopping-cart-line nav__search" id="cart-btn"></i>
+                    <!-- Login button -->
+                    <i class="ri-user-line nav__login" id="login-btn"></i>
+
+                    <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--==================== search ====================-->
+        <div class="search" id="search">
+            <form action="" class="search__form">
+                <i class="ri-search-line search__icon"></i>
+                <input type="search" placeholder="Apa yang ingin kamu telusuri?" class="search__input">
+            </form>
+
+            <i class="ri-close-line search__close" id="search-close"></i>
+        </div>
+        <!--==================== cart ====================-->
+        <div class="cart" id="cart">
+            <form action="" class="cart__form">
+                <div class="small-container cart-page">
+
+                    <table>
+                        <tr>
+                            <th>Produk</th>
+                            <th>Kuantitas</th>
+                            <th>Subtotal</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="cart-info">
+                                    <img src="productimg/perangkat IoT/Smart Smoke Detector.jpg" alt="">
+                                    <div>
+                                        <p>Smart Smoke Detector</p>
+                                        <p>Harga: Rp. 1.000.000.000,00</p>
+                                        <br>
+                                        <a href="#">Pesan sekarang</a>
+                                        <a href="#">Hapus dari keranjang</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input type="number" value="1"></td>
+                            <td>Rp. 1.000.000.000,00</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="cart-info">
+                                    <img src="productimg/home automation/Smart Vacuum Cleaner.jpg" alt="">
+                                    <div>
+                                        <p>Smart Vacum Cleaner</p>
+                                        <p>Harga: Rp. 1.000.000.000,00</p>
+                                        <br>
+                                        <div class="a">
+                                            <a href="#">Pesan sekarang</a>
+                                            <a href="#">Hapus dari keranjang</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input type="number" value="1"></td>
+                            <td>Rp. 1.000.000.000,00</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </form>
+            <i class="ri-close-line cart__close" id="cart-close"></i>
+        </div>
+        <!--==================== login ====================-->
+        <div class="login" id="login">
+
+            <form action="" class="login__form">
+                <h2 class="login__title">Log In</h2>
+                
+                <div class="login__group">
+                <div>
+                    <label for="email" class="login__label">Gmail</label>
+                    <input type="email" placeholder="Ketik gmail anda" id="email" class="login__input">
+                </div>
+                
+                <div>
+                    <label for="password" class="login__label">Password</label>
+                    <input type="password" placeholder="Masukkan password anda" id="password" class="login__input">
+                </div>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Ingat saya</label>
+                    <a href="#">Lupa password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+
+                <div class="login-register">
+                    <p>Belum memiliki akun?<a href="#" class="register-link"> Daftar</a></p>
+                </div>
+            </form>
+            
+            <i class="ri-close-line login__close" id="login-close"></i>
+        </div>
+        <!--==================== body ====================-->
+        <!--home-->
+        <section class="home">
+            <div class="home__container">
+
+                <div class="home__info">
+                    <h1 class="home__title">
+                    <span>Future</span>Tech
+                    </h1>
+                    <br>
+                    <p class="home__description">
+                    FutureTech adalah platform e-commerce yang menawarkan berbagai produk teknologi terbaru dan inovatif yang dirancang untuk mendukung perubahan positif menuju masa depan yang berkelanjutan.
+                    </p>
+                    <!--<a href="about.html">Baca selengkapnya</a>-->
+                </div>
+            </div>
+                <div class="bg">
+                    <img src="homeimg/logo.png" alt="">
+                </div>
+        </section>
+        <!--product-->
+          <div class="heading">
+              <h1 class="heading-title">PRODUCT BEST SELLER</h1>
+          </div>
+        <div class="product">
+          <!--product1-->
+          <div class="productt">
+            <img src="homeimg/Smart Lighting System.jpg" alt="" class="imgg">
+            <div class="layer">
+              <div class="overlay">
+                <div class="judul">
+                    <h2>Smart Lighting System</h2> 
+                </div>
+                <div class="buynow">
+                    <a href="#" class="buy-now">Beli sekarang</a>
+                </div>
+                <div class="addcart">
+                    <a href="#" class="add-to-cart">Tambahkan ke keranjang</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--product2-->
+          <div class="productt">
+            <img src="homeimg/Smart Lock.jpg" alt="" class="imgg">
+            <div class="layer">
+              <div class="overlay">
+                <div class="judul">
+                    <h2>Smart Lock</h2> 
+                </div>
+                <div class="buynow">
+                    <a href="#" class="buy-now">Beli sekarang</a>
+                </div>
+                <div class="addcart">
+                    <a href="#" class="add-to-cart">Tambahkan ke keranjang</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--product3-->
+          <div class="productt">
+            <img src="homeimg/Smart Smoke Detector.jpg" alt="" class="imgg">
+            <div class="layer">
+              <div class="overlay">
+                <div class="judul">
+                    <h2>Smart Smoke Detector</h2> 
+                </div>
+                <div class="buynow">
+                    <a href="#" class="buy-now">Beli sekarang</a>
+                </div>
+                <div class="addcart">
+                    <a href="#" class="add-to-cart">Tambahkan ke keranjang</a>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div class="btnn">
+          <a href="product.html" class="buttonn">Lihat lebih banyak</a>
+        </div>
+        <!--footer-->
+        <footer class="footer">
+            <div class="support">
+               <h2>SUPPORT BY</h2>
+               <br>
+               <img src="foto/logo implora 2023 white (3).png">
+            </div>
+            <div class="social">
+               <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+               <a href="#"><i class="fa-brands fa-facebook"></i></a>
+               <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+               <a href="#"><i class="fa-brands fa-square-twitter"></i> </a>
+            </div>
+      
+            <ul class="list">
+               <li><a href="home.html">Beranda</a></li>
+               <li><a href="about.html">Tentang</a></li>
+               <li><a href="product.html">Produk</a></li>
+            </ul>
+      
+            <p class="copyright">
+               ©2024 Cinta Kita | All Right Reserved
+            </p>
+         </footer>
+        <!--=============== javascript ===============-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@7.4.1/swiper-bundle.min.js"></script>
+        <script src="home.js"></script>
+    </body>
+</html>
